@@ -127,6 +127,7 @@ a {
     padding: 0 15rem;
   }
   .menu-button {
+    position: fixed;
     transform: translateX(-100%);
     opacity: 0;
     pointer-events: none;

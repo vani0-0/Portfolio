@@ -145,9 +145,9 @@ a {
 }
 
 .menu-button {
-  position: absolute;
   font-size: 1.5rem;
   top: 2rem;
+  position: fixed;
   right: 2rem;
 }
 .profile-ko {
