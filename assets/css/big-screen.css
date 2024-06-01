@@ -1,0 +1,54 @@
+/* big screen  */
+@media (min-width: 1024px) {
+  header {
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.4rem 2.5rem;
+    transition: background-color 0.4s ease-in-out;
+  }
+  header .nav-item {
+    color: var(--color-2);
+  }
+  header ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  header.scrolled {
+    color: var(--color-1);
+    background-color: var(--color-2);
+  }
+  header.scrolled a {
+    color: var(--color-1);
+  }
+  header .profile,
+  header .lalabas-lang-pag-maliit {
+    display: none;
+  }
+
+  section {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  #home .yung-una {
+    flex-direction: row;
+  }
+  #home .yung-una .pic-sa-gedli {
+    min-width: 20rem;
+    height: 20rem;
+    margin-right: 2rem;
+  }
+
+  #about {
+    padding-bottom: 0;
+  }
+
+  #about .about-me {
+    max-width: 500px;
+  }
+  #about .about-content {
+    flex-direction: row-reverse;
+  }
+}

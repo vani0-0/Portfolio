@@ -1,0 +1,252 @@
+:root {
+  --profile-image: url("../img/profile.jpg");
+  --pic-sa-gedli: url("../img/nangyan.jpg");
+  --color-3: #ff4c29;
+  --color-2: #323232;
+  --color-1: #ddd0c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+a {
+  color: var(--color-3);
+}
+
+body {
+  position: relative;
+  background-color: var(--color-1);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  transition: background-color, transform 0.4s ease-in-out;
+  z-index: 100;
+}
+
+header .nav-item {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.line-button {
+  position: relative;
+  display: inline-block;
+}
+
+.line-button span {
+  position: absolute;
+  display: block;
+  background-color: var(--color-1);
+}
+/* top */
+.line-button span:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: 0.2s ease-in;
+}
+/* right */
+.line-button span:nth-child(2) {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: 0.2s ease-out;
+  transition-delay: 0.2s;
+}
+/* bottom */
+.line-button span:nth-child(3) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.2s ease-in;
+}
+/* left */
+.line-button span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: 0.2s ease-out;
+  transition-delay: 0.2s;
+}
+
+.line-button:hover span:nth-child(1),
+.line-button:hover span:nth-child(3) {
+  transform: scaleX(1);
+}
+.line-button:hover span:nth-child(2),
+.line-button:hover span:nth-child(4) {
+  transform: scaleY(1);
+}
+
+.line-button.active span {
+  transform: scaleX(1) scaleY(1);
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#home {
+  display: flex;
+}
+#home .yung-una {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#home .yung-pangalawa {
+  display: flex;
+  flex-direction: column;
+}
+#home .pic-sa-gedli {
+  background-image: var(--pic-sa-gedli);
+  width: 18em;
+  height: 18em;
+  background-position: center;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+  background-size: cover;
+  border: 5px solid var(--color-2);
+}
+#home .animated-text {
+  display: flex;
+  font-size: 2rem;
+}
+#home .animated-text #dynamic-text {
+  color: var(--color-3);
+  font-weight: bold;
+}
+#home .mga-links-namalaki {
+  display: flex;
+  background-color: var(--color-2);
+  justify-content: space-evenly;
+  width: min-content;
+  padding: 0.4rem 1rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  gap: 12px;
+  border-radius: 12px;
+  box-shadow: -1px 1px 4px 1px #ff4d2970;
+}
+#home .mga-links-namalaki a {
+  color: #ffe;
+  transition: color 0.4s ease-in-out;
+}
+
+#home .download-mo-cvko:hover,
+#home .mga-links-namalaki a:hover {
+  color: var(--color-3);
+}
+
+#home .basta {
+  display: flex;
+  align-items: center;
+}
+
+#home .download-mo-cvko {
+  color: var(--color-1);
+  background-color: var(--color-2);
+  justify-content: space-evenly;
+  padding: 0.63rem 1rem;
+  margin: 1rem 0 0 0.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  box-shadow: -1px 1px 4px 1px #ff4d2970;
+  transition: color 0.4s ease-in-out;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-1);
+  background-color: var(--color-2);
+  padding-bottom: 5rem;
+}
+
+#about .about-title {
+  font-size: large;
+  font-weight: 600;
+  margin: 1rem;
+}
+#about .intro {
+  margin-left: 1.5rem;
+}
+
+#about .picture-someday {
+  width: 12rem;
+  height: 12rem;
+  background-color: var(--color-1);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.skills-content {
+  padding: 0 1.5rem;
+}
+.skills-container {
+  flex: 1;
+}
+.skills .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-1);
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: var(--color-1);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--color-3);
+}

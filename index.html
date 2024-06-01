@@ -3,108 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vandev CES</title>
+    <title>Vandev CCS</title>
+    <link rel="shortcut icon" href="assets/img/icon.jpg" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/big-screen.css" />
+    <link rel="stylesheet" href="assets/css/medium-screen.css" />
+    <link rel="stylesheet" href="assets/css/small-screen.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/bead00e797.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main2.js" defer></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header site  -->
     <header>
       <div class="profile-ko">
         <div class="profile"></div>
         <p class="nickname-ko">@vandev</p>
         <div class="lalabas-lang-pag-maliit">
-          Jr. Programmer Trainee
+          <p>Jr. Programmer Trainee</p>
           <hr />
           <div class="mga-links">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-solid fa-envelope"></i>
+            <a href="https://www.facebook.com/chongochoco/" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/van00/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vani0-0" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:vanvasquez0725@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
         </div>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home" class="nav-item line-button">
-              <span></span> <span></span> <span></span> <span></span>
-              <i class="fa-solid fa-house"></i>
-              <p>HOME</p>
-              <i class="design-sa-button"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#about" class="nav-item line-button">
-              <span></span> <span></span> <span></span> <span></span>
-              <i class="fa-solid fa-user"></i>
-              <p>ABOUT</p>
-              <i class="design-sa-button"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#resume" class="nav-item line-button">
-              <span></span> <span></span> <span></span> <span></span>
-              <i class="fa-solid fa-file"></i>
-              <p>RESUME</p>
-              <i class="design-sa-button"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#certifications" class="nav-item line-button">
-              <span></span> <span></span> <span></span> <span></span>
-              <i class="fa-solid fa-certificate"></i>
-              <p>CERTIFICATIONS</p>
-              <i class="design-sa-button"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-item line-button">
-              <span></span> <span></span> <span></span> <span></span>
-              <i class="fa-solid fa-address-book"></i>
-              <p>CONTACT</p>
-              <i class="design-sa-button"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <ul>
+        <li>
+          <a href="#home" class="nav-item line-button">
+            <span></span><span></span><span></span><span></span>
+            <i class="fa-solid fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-item line-button">
+            <span></span><span></span><span></span><span></span>
+            <i class="fa-solid fa-user"></i>
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-item line-button">
+            <span></span><span></span><span></span><span></span>
+            <i class="fa-solid fa-file"></i>
+            Resume
+          </a>
+        </li>
+        <li>
+          <a href="#certifications" class="nav-item line-button">
+            <span></span> <span></span> <span></span> <span></span>
+            <i class="fa-solid fa-certificate"></i>
+            Certifications
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-item line-button">
+            <span></span> <span></span> <span></span> <span></span>
+            <i class="fa-solid fa-address-book"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
     </header>
-    <div class="main">
-      <div class="margin">
-        <div id="menu-button">
-          <i class="fa-solid fa-bars menu-button menu-icon"></i>
-          <i
-            class="fa-solid fa-x menu-button close-icon"
-            style="display: none"
-          ></i>
-        </div>
-        <section id="home">
-          <div class="yung-una">
-            <div class="pic-sa-gedli"></div>
-            <div class="yung-pangalawa">
-              <div class="wrapper">
-                <div class="static-text">I'm a</div>
-                <div class="dynamic-text" id="dynamic-text"></div>
-              </div>
-              <div class="text-sa-baba">
-                <h3>Jr. Programmer Trainee</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                  ab libero autem illum tempora quasi voluptates unde quidem
-                  repellendus, doloremque eum illo debitis culpa quae voluptate
-                  ut, eaque dolores ullam.
-                </p>
+    <div id="menu-icon" class="fa-solid fa-bars"></div>
+    <main>
+      <section id="home">
+        <div class="yung-una" data-aos="fade-in">
+          <div class="pic-sa-gedli"></div>
+          <div class="yung-pangalawa">
+            <div class="animated-text">
+              <h4>I'm a &nbsp;</h4>
+              <p>
+                <
+                <span
+                  id="dynamic-text"
+                  class="typed"
+                  data-typed-items="Programmer., Freelancer., Single., Minecraft., Project Manager., Student., Digital Artist"
+                ></span>
+                />
+              </p>
+            </div>
+            <div class="text-sa-baba">
+              <h3>Jr. Programmer Trainee</h3>
+              <p>
+                Digital sorcerer weaving spells with code, turning caffeine into
+                algorithms! ☕️ Full-time problem solver, part-time meme
+                enthusiast.
+              </p>
+              <div class="basta">
                 <div class="mga-links-namalaki">
                   <a
                     href="https://www.facebook.com/chongochoco/"
@@ -116,29 +117,68 @@
                     <i class="fa-brands fa-linkedin"></i>
                   </a>
                   <a href="https://github.com/vani0-0" target="_blank">
-                    <i class="fa-brands fa-github"> </i>
+                    <i class="fa-brands fa-github"></i>
                   </a>
                   <a href="mailto:vanvasquez0725@gmail.com">
                     <i class="fa-solid fa-envelope"></i>
                   </a>
                 </div>
+                <a href="#" class="download-mo-cvko">
+                  <i class="fa-solid fa-mug-hot"></i>
+                  Download CV
+                </a>
               </div>
             </div>
           </div>
-        </section>
-        <section id="about">ABOUT</section>
-        <section id="resume">RESUME</section>
-        <section id="certifications">CERTIFICATIONS</section>
-        <section id="contact">
-          <h1>Email me at:</h1>
-          <a href="mailto:vanvasquez0725@gmail.com" target="_blank"> GMAIL </a>
-          <h1>Connect to me in:</h1>
-          <a href="https://www.linkedin.com/in/van00/" target="_blank"
-            >LinkedIn</a
-          >
-          <a href="https://t.me/shireeea" target="_blank">Telegram</a>
-        </section>
-      </div>
-    </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="about-title">
+          Studies Computer Science at Institute of Creative Computer Technology
+          Colleges in Cainta, Rizal.
+        </p>
+        <div class="about-content">
+          <div class="about-me" data-aos="fade-right">
+            <div class="picture-someday"></div>
+            <p class="about-title">Project Manager | Jr. Programmer Trainee</p>
+            <p class="intro">
+              I am a Junior Programmer Trainee at TrueBPO, Inc., skilled in
+              creative and logical thinking. Proficient in multiple programming
+              languages. I am also an active member and currently serves as a
+              Project Manager for Code Crafters, a sub-organization of Computer
+              Explorer Studies at the College of Computer Studies in our school.
+            </p>
+          </div>
+          <div data-aos="fade-up" class="skills-container">
+            <h3 class="about-title">Profeciency</h3>
+            <div class="skills skills-content">
+              <div data-aos="fade-up" id="progress-bars-container"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resume">resume</section>
+      <section id="certifications">certifications</section>
+      <section id="contact">contact</section>
+    </main>
+
+    <!-- vendor js files-->
+    <script
+      src="https://kit.fontawesome.com/bead00e797.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- template js  -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
