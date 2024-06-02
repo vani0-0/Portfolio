@@ -1,5 +1,5 @@
 /* big screen  */
-@media (min-width: 1024px) {
+@media only screen and (min-width: 900px) {
   header {
     align-items: center;
     justify-content: space-between;
@@ -28,8 +28,8 @@
   }
 
   section {
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   #home .yung-una {
@@ -45,10 +45,25 @@
     padding-bottom: 0;
   }
 
-  #about .about-me {
-    max-width: 500px;
-  }
   #about .about-content {
     flex-direction: row-reverse;
+  }
+  #about .intro {
+    max-width: 800px;
+  }
+  #about .skills-container {
+    min-width: 500px;
+  }
+  #resume .contents {
+    flex-direction: row;
+  }
+  .portfolio .img-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px 12px;
+    grid-template-areas:
+      ". ."
+      ". .";
   }
 }

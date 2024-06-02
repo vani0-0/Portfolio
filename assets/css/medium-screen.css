@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
   header {
     flex-direction: column;
     align-items: stretch;
@@ -42,5 +42,11 @@
   }
 
   #home {
+    align-items: center;
+    margin: 4rem 0;
+  }
+
+  #contact {
+    padding-left: 15rem;
   }
 }

@@ -36,6 +36,7 @@ header {
 header .nav-item {
   padding: 0.75rem 1rem;
   width: 100%;
+  margin-bottom: 4px;
   font-size: 1rem;
 }
 
@@ -116,7 +117,9 @@ section {
 
 #home {
   display: flex;
+  justify-content: center;
 }
+
 #home .yung-una {
   display: flex;
   align-items: center;
@@ -125,6 +128,7 @@ section {
 #home .yung-pangalawa {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
 }
 #home .pic-sa-gedli {
   background-image: var(--pic-sa-gedli);
@@ -183,7 +187,8 @@ section {
   transition: color 0.4s ease-in-out;
 }
 
-#about {
+#about,
+#certifications {
   display: flex;
   flex-direction: column;
   color: var(--color-1);
@@ -198,6 +203,8 @@ section {
 }
 #about .intro {
   margin-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 25px;
 }
 
 #about .picture-someday {
@@ -208,17 +215,18 @@ section {
   margin: auto;
 }
 
-.about-content {
+#about .about-content {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
-.skills-content {
+#about .skills-content {
   padding: 0 1.5rem;
 }
-.skills-container {
+#about .skills-container {
   flex: 1;
 }
+
 .skills .progress {
   height: 50px;
   display: block;
@@ -249,4 +257,246 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: var(--color-3);
+}
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+#resume .contents {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#resume .container {
+  width: 100%;
+  overflow-x: hidden;
+}
+#resume .horizontal-scrolling-items {
+  display: flex;
+  font-size: 1rem;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#resume .horizontal-scrolling-items__item {
+  white-space: nowrap;
+}
+
+section h2 {
+  padding-left: 4px;
+  border-left: 2px solid var(--color-3);
+  margin-bottom: 4px;
+}
+
+#resume .resume-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--color-2);
+}
+
+#resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--color-3);
+  position: relative;
+}
+#resume .resume-item h3 {
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-2);
+  margin-bottom: 10px;
+}
+
+#resume .resume-item h4 {
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-2);
+  margin-bottom: 10px;
+}
+
+#resume .resume-item h5 {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--color-3);
+}
+
+#resume .resume-item ul {
+  padding-left: 20px;
+}
+
+#resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+#resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+#resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--color-3);
+}
+
+.portfolio .card {
+  width: auto;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border-left: solid 2px var(--color-3);
+  border-bottom: solid 2px var(--color-3);
+  position: relative;
+}
+
+.portfolio .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio .card:hover .card-img {
+  transform: scale(0.9);
+}
+.portfolio .card:hover .card-body {
+  opacity: 1;
+  right: 0;
+}
+
+.portfolio .card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #323232d6;
+  backdrop-filter: blur(4px);
+  color: var(--color-1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transform-origin: right;
+  z-index: 99;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio .card-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600px;
+}
+
+.portfolio .card-subtitle {
+  font-size: 1rem;
+  color: var(--color-3);
+  text-transform: uppercase;
+  font-weight: 600px;
+}
+
+.portfolio .card-info {
+  font-size: 1rem;
+  line-height: 25px;
+  margin: 40px 0 auto 0;
+
+  display: block;
+}
+
+.portfolio .card-btn {
+  background: var(--color-3);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-2);
+  border-radius: 4px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio .card-btn:hover {
+  background-color: var(--color-1);
+  transform: translateX(2px) translateY(-2px);
+  border-bottom: 2px solid var(--color-2);
+  border-left: 2px solid var(--color-2);
+}
+
+.portfolio .img-display {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 4);
+  gap: 12px;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    ".";
+}
+
+#contact {
+  min-height: auto;
+  color: var(--color-2);
+  height: max-content;
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+#contact .first-box h1 {
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+#contact .first-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact .main {
+  display: flex;
+  border: 2px solid var(--color-2);
+  border-radius: 12px;
+  flex-direction: row;
+  align-items: start;
+  padding: 2rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#contact .main div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#contact .main div i {
+  margin-right: 4px;
+}
+
+#contact p,
+#contact a {
+  color: var(--color-2);
+  display: inline-block;
+  font-size: 1rem;
+}
+#contact a:hover,
+#contact p:hover {
+  color: var(--color-3);
 }

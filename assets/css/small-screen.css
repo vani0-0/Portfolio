@@ -1,5 +1,5 @@
 /* small screen  */
-@media (max-width: 560px) {
+@media only screen and (max-width: 600px) {
   header {
     transform: translateX(-100%);
     flex-direction: column;
