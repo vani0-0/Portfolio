@@ -455,7 +455,7 @@ section h2 {
   min-height: auto;
   color: var(--color-2);
   height: max-content;
-  padding: 1rem 2rem 4rem 2rem;
+  padding-bottom: 4rem;
 }
 
 #contact .first-box h1 {
