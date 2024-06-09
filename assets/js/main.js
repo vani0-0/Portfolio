@@ -34,6 +34,7 @@ function updatePositions() {
 }
 
 function main() {
+  AOS.init();
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll("ul li a");
   const header = document.querySelector("header");
