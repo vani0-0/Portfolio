@@ -224,6 +224,10 @@ a.active {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 12px;
+}
+.bio-info .text {
+  line-height: 2em;
 }
 .skill-container .skill-content {
   display: flex;
