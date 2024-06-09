@@ -121,6 +121,7 @@ a.active {
 .home {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 .home-content {
   position: absolute;
@@ -135,7 +136,7 @@ a.active {
   z-index: -1;
 }
 .expertise {
-  padding-top: 15%;
+  padding-top: 18%;
   padding-left: 15%;
   min-height: 100vh;
 }
@@ -202,6 +203,8 @@ a.active {
   padding-top: 10%;
   padding-left: 15%;
   min-height: 100vh;
+  overflow: hidden;
+  padding-bottom: 64px;
 }
 .profile-pic {
   background-image: var(--profile-image);
@@ -214,12 +217,74 @@ a.active {
 .flex {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 24px;
 }
 .bio-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.skill-container .skill-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 24px;
+}
+.commented {
+  opacity: 0.5;
+}
+.profile-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: start;
+}
+.download-mo-cvko {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--color-red);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+.skill-content p {
+  max-width: 200px;
+  opacity: 0.5;
+  line-height: 1.4em;
+}
+.skill-container {
+  margin-top: 1rem;
+}
+.job-title {
+  color: #31e0ff;
+}
+.line {
+  position: fixed;
+  top: 11%;
+  bottom: 0;
+  width: 2px;
+  background-image: linear-gradient(
+    to bottom,
+    #ff3131,
+    #ff4baf,
+    #bf92ff,
+    #41c3ff,
+    #31e0ff
+  );
+  left: 10%;
+  z-index: 100;
+}
+.circle {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-red);
+  border-radius: 50%;
+  position: absolute;
+  left: calc(10% - 12px);
+}
+.absolute-icon {
+  position: absolute;
 }
 @media only screen and (max-width: 860px) {
   /* Typography */
@@ -245,6 +310,7 @@ a.active {
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width: 940px) {
   .expertise-container {
     grid-template-columns: 1fr;
@@ -258,6 +324,18 @@ a.active {
   .profile-pic {
     width: 320px;
     height: 320px;
+  }
+  .about {
+    padding-top: 18%;
+  }
+  .skill-container .skill-content {
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 40px;
   }
 }
 @media only screen and (min-width: 940px) and (max-width: 1240px) {
@@ -300,5 +378,8 @@ a.active {
   .profile-pic {
     width: 320px;
     height: 320px;
+  }
+  .skill-content p {
+    max-width: 400px;
   }
 }
