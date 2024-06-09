@@ -140,7 +140,8 @@ a.active {
   padding-left: 15%;
   min-height: 100vh;
 }
-.expertise-content {
+.expertise-content,
+.about-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
